@@ -107,7 +107,7 @@ public class AmazonMachineLearningClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonMachineLearningClient client = new AmazonMachineLearningClient(AWSMobileClient.getInstance());
@@ -146,7 +146,7 @@ public class AmazonMachineLearningClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonMachineLearningClient client = new AmazonMachineLearningClient(AWSMobileClient.getInstance());
@@ -189,7 +189,7 @@ public class AmazonMachineLearningClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonMachineLearningClient client = new AmazonMachineLearningClient(AWSMobileClient.getInstance());
@@ -229,7 +229,7 @@ public class AmazonMachineLearningClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonMachineLearningClient client = new AmazonMachineLearningClient(AWSMobileClient.getInstance());
@@ -300,7 +300,7 @@ public class AmazonMachineLearningClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonMachineLearningClient client = new AmazonMachineLearningClient(AWSMobileClient.getInstance());

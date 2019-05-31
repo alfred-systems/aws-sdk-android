@@ -125,7 +125,7 @@ public class AmazonLexRuntimeClient extends AmazonWebServiceClient implements Am
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonLexRuntimeClient client = new AmazonLexRuntimeClient(AWSMobileClient.getInstance());
@@ -164,7 +164,7 @@ public class AmazonLexRuntimeClient extends AmazonWebServiceClient implements Am
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonLexRuntimeClient client = new AmazonLexRuntimeClient(AWSMobileClient.getInstance());
@@ -206,7 +206,7 @@ public class AmazonLexRuntimeClient extends AmazonWebServiceClient implements Am
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonLexRuntimeClient client = new AmazonLexRuntimeClient(AWSMobileClient.getInstance());
@@ -246,7 +246,7 @@ public class AmazonLexRuntimeClient extends AmazonWebServiceClient implements Am
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonLexRuntimeClient client = new AmazonLexRuntimeClient(AWSMobileClient.getInstance());
@@ -317,7 +317,7 @@ public class AmazonLexRuntimeClient extends AmazonWebServiceClient implements Am
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonLexRuntimeClient client = new AmazonLexRuntimeClient(AWSMobileClient.getInstance());

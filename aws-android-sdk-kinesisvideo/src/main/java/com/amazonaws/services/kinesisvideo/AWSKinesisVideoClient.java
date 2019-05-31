@@ -106,7 +106,7 @@ public class AWSKinesisVideoClient extends AmazonWebServiceClient implements AWS
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSKinesisVideoClient client = new AWSKinesisVideoClient(AWSMobileClient.getInstance());
@@ -145,7 +145,7 @@ public class AWSKinesisVideoClient extends AmazonWebServiceClient implements AWS
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSKinesisVideoClient client = new AWSKinesisVideoClient(AWSMobileClient.getInstance());
@@ -187,7 +187,7 @@ public class AWSKinesisVideoClient extends AmazonWebServiceClient implements AWS
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSKinesisVideoClient client = new AWSKinesisVideoClient(AWSMobileClient.getInstance());
@@ -227,7 +227,7 @@ public class AWSKinesisVideoClient extends AmazonWebServiceClient implements AWS
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSKinesisVideoClient client = new AWSKinesisVideoClient(AWSMobileClient.getInstance());
@@ -298,7 +298,7 @@ public class AWSKinesisVideoClient extends AmazonWebServiceClient implements AWS
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSKinesisVideoClient client = new AWSKinesisVideoClient(AWSMobileClient.getInstance());

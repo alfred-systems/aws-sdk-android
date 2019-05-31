@@ -216,7 +216,7 @@ public class AWSSecurityTokenServiceClient extends AmazonWebServiceClient implem
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSSecurityTokenServiceClient client = new AWSSecurityTokenServiceClient(AWSMobileClient.getInstance());
@@ -255,7 +255,7 @@ public class AWSSecurityTokenServiceClient extends AmazonWebServiceClient implem
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSSecurityTokenServiceClient client = new AWSSecurityTokenServiceClient(AWSMobileClient.getInstance());
@@ -298,7 +298,7 @@ public class AWSSecurityTokenServiceClient extends AmazonWebServiceClient implem
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSSecurityTokenServiceClient client = new AWSSecurityTokenServiceClient(AWSMobileClient.getInstance());
@@ -338,7 +338,7 @@ public class AWSSecurityTokenServiceClient extends AmazonWebServiceClient implem
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSSecurityTokenServiceClient client = new AWSSecurityTokenServiceClient(AWSMobileClient.getInstance());
@@ -409,7 +409,7 @@ public class AWSSecurityTokenServiceClient extends AmazonWebServiceClient implem
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSSecurityTokenServiceClient client = new AWSSecurityTokenServiceClient(AWSMobileClient.getInstance());

@@ -113,7 +113,7 @@ public class AmazonPollyClient extends AmazonWebServiceClient implements AmazonP
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonPollyClient client = new AmazonPollyClient(AWSMobileClient.getInstance());
@@ -151,7 +151,7 @@ public class AmazonPollyClient extends AmazonWebServiceClient implements AmazonP
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonPollyClient client = new AmazonPollyClient(AWSMobileClient.getInstance());
@@ -192,7 +192,7 @@ public class AmazonPollyClient extends AmazonWebServiceClient implements AmazonP
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonPollyClient client = new AmazonPollyClient(AWSMobileClient.getInstance());
@@ -232,7 +232,7 @@ public class AmazonPollyClient extends AmazonWebServiceClient implements AmazonP
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonPollyClient client = new AmazonPollyClient(AWSMobileClient.getInstance());
@@ -303,7 +303,7 @@ public class AmazonPollyClient extends AmazonWebServiceClient implements AmazonP
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonPollyClient client = new AmazonPollyClient(AWSMobileClient.getInstance());

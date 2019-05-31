@@ -107,7 +107,7 @@ public class AmazonTranslateClient extends AmazonWebServiceClient implements Ama
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonTranslateClient client = new AmazonTranslateClient(AWSMobileClient.getInstance());
@@ -146,7 +146,7 @@ public class AmazonTranslateClient extends AmazonWebServiceClient implements Ama
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonTranslateClient client = new AmazonTranslateClient(AWSMobileClient.getInstance());
@@ -188,7 +188,7 @@ public class AmazonTranslateClient extends AmazonWebServiceClient implements Ama
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonTranslateClient client = new AmazonTranslateClient(AWSMobileClient.getInstance());
@@ -228,7 +228,7 @@ public class AmazonTranslateClient extends AmazonWebServiceClient implements Ama
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonTranslateClient client = new AmazonTranslateClient(AWSMobileClient.getInstance());
@@ -299,7 +299,7 @@ public class AmazonTranslateClient extends AmazonWebServiceClient implements Ama
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonTranslateClient client = new AmazonTranslateClient(AWSMobileClient.getInstance());

@@ -119,7 +119,7 @@ public class AmazonCognitoIdentityProviderClient extends AmazonWebServiceClient 
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonCognitoIdentityProviderClient client = new AmazonCognitoIdentityProviderClient(AWSMobileClient.getInstance());
@@ -158,7 +158,7 @@ public class AmazonCognitoIdentityProviderClient extends AmazonWebServiceClient 
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonCognitoIdentityProviderClient client = new AmazonCognitoIdentityProviderClient(AWSMobileClient.getInstance());
@@ -201,7 +201,7 @@ public class AmazonCognitoIdentityProviderClient extends AmazonWebServiceClient 
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonCognitoIdentityProviderClient client = new AmazonCognitoIdentityProviderClient(AWSMobileClient.getInstance());
@@ -241,7 +241,7 @@ public class AmazonCognitoIdentityProviderClient extends AmazonWebServiceClient 
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonCognitoIdentityProviderClient client = new AmazonCognitoIdentityProviderClient(AWSMobileClient.getInstance());
@@ -312,7 +312,7 @@ public class AmazonCognitoIdentityProviderClient extends AmazonWebServiceClient 
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonCognitoIdentityProviderClient client = new AmazonCognitoIdentityProviderClient(AWSMobileClient.getInstance());

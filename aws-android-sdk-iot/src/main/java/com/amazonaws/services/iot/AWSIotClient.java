@@ -124,7 +124,7 @@ public class AWSIotClient extends AmazonWebServiceClient implements AWSIot {
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSIotClient client = new AWSIotClient(AWSMobileClient.getInstance());
@@ -162,7 +162,7 @@ public class AWSIotClient extends AmazonWebServiceClient implements AWSIot {
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSIotClient client = new AWSIotClient(AWSMobileClient.getInstance());
@@ -203,7 +203,7 @@ public class AWSIotClient extends AmazonWebServiceClient implements AWSIot {
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSIotClient client = new AWSIotClient(AWSMobileClient.getInstance());
@@ -243,7 +243,7 @@ public class AWSIotClient extends AmazonWebServiceClient implements AWSIot {
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSIotClient client = new AWSIotClient(AWSMobileClient.getInstance());
@@ -314,7 +314,7 @@ public class AWSIotClient extends AmazonWebServiceClient implements AWSIot {
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AWSIotClient client = new AWSIotClient(AWSMobileClient.getInstance());

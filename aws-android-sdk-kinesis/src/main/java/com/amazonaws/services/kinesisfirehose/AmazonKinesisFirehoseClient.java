@@ -113,7 +113,7 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonKinesisFirehoseClient client = new AmazonKinesisFirehoseClient(AWSMobileClient.getInstance());
@@ -152,7 +152,7 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonKinesisFirehoseClient client = new AmazonKinesisFirehoseClient(AWSMobileClient.getInstance());
@@ -195,7 +195,7 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonKinesisFirehoseClient client = new AmazonKinesisFirehoseClient(AWSMobileClient.getInstance());
@@ -235,7 +235,7 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonKinesisFirehoseClient client = new AmazonKinesisFirehoseClient(AWSMobileClient.getInstance());
@@ -306,7 +306,7 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonKinesisFirehoseClient client = new AmazonKinesisFirehoseClient(AWSMobileClient.getInstance());

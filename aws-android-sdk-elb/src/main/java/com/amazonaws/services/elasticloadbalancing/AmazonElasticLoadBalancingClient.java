@@ -142,7 +142,7 @@ public class AmazonElasticLoadBalancingClient extends AmazonWebServiceClient imp
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonElasticLoadBalancingClient client = new AmazonElasticLoadBalancingClient(AWSMobileClient.getInstance());
@@ -181,7 +181,7 @@ public class AmazonElasticLoadBalancingClient extends AmazonWebServiceClient imp
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonElasticLoadBalancingClient client = new AmazonElasticLoadBalancingClient(AWSMobileClient.getInstance());
@@ -224,7 +224,7 @@ public class AmazonElasticLoadBalancingClient extends AmazonWebServiceClient imp
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonElasticLoadBalancingClient client = new AmazonElasticLoadBalancingClient(AWSMobileClient.getInstance());
@@ -264,7 +264,7 @@ public class AmazonElasticLoadBalancingClient extends AmazonWebServiceClient imp
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonElasticLoadBalancingClient client = new AmazonElasticLoadBalancingClient(AWSMobileClient.getInstance());
@@ -335,7 +335,7 @@ public class AmazonElasticLoadBalancingClient extends AmazonWebServiceClient imp
      *
      * <pre>
      * {@code
-     * AWSMobileClient.getInstance.initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+     * AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
      *     @Override
      *     public void onResult(final UserStateDetails details) {
      *         AmazonElasticLoadBalancingClient client = new AmazonElasticLoadBalancingClient(AWSMobileClient.getInstance());
