@@ -22,12 +22,12 @@ import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.amazonaws.services.s3.AmazonS3;
-
 import com.amazonaws.logging.Log;
 import com.amazonaws.logging.LogFactory;
+import com.amazonaws.services.s3.AmazonS3;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -92,7 +92,7 @@ public class TransferNetworkLossHandler extends BroadcastReceiver {
      * @return handler object
      * @throws TransferUtilityException when the singleton instance is null.
      */
-    public static synchronized TransferNetworkLossHandler getInstance() 
+    public static synchronized TransferNetworkLossHandler getInstance()
             throws TransferUtilityException {
         if (transferNetworkLossHandler == null) {
             final String errorMessage = "TransferNetworkLossHandler is not created. "
@@ -154,7 +154,7 @@ public class TransferNetworkLossHandler extends BroadcastReceiver {
      */
     private synchronized void resumeAllTransfersOnNetworkAvailability() {
         final TransferState[] transferStates = new TransferState[] {
-            TransferState.WAITING_FOR_NETWORK
+                TransferState.WAITING_FOR_NETWORK
         };
 
         LOGGER.debug("Loading transfers from database...");
@@ -209,11 +209,18 @@ public class TransferNetworkLossHandler extends BroadcastReceiver {
      * Pause all running transfers and set the state to WAITING_FOR_NETWORK.
      */
     private synchronized void pauseAllTransfersDueToNetworkInterruption() {
-        for (final TransferRecord transferRecord : updater.getTransfers().values()) {
+        HashMap<Integer, TransferRecord> map = new HashMap<>();
+        map.putAll(updater.getTransfers());
+
+        for (final TransferRecord transferRecord : map.values()) {
+            if (transferRecord == null) {
+                continue;
+            }
             final AmazonS3 s3 = S3ClientReference.get(transferRecord.id);
-            if (s3 != null && 
-                transferRecord != null && 
-                transferRecord.pauseIfRequiredForNetworkInterruption(s3, updater, connManager)) {
+            if (s3 == null) {
+                continue;
+            }
+            if (transferRecord.pauseIfRequiredForNetworkInterruption(s3, updater, connManager)) {
                 updater.updateState(transferRecord.id, TransferState.WAITING_FOR_NETWORK);
             }
         }

@@ -19,17 +19,12 @@ import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.ApplicationInfo;
 import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.IBinder;
 
 import com.amazonaws.logging.Log;
 import com.amazonaws.logging.LogFactory;
-
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
-import java.util.Map;
 
 /**
  * TransferService is limited to the following functionality:
@@ -137,14 +132,14 @@ public class TransferService extends Service {
          * b) An identifier for the ongoing notification c) Flag that determines if the notification
          * needs to be removed when the service is moved out of the foreground state.
          */
-        if (Build.VERSION.SDK_INT >= ANDROID_OREO) {
+        if (Build.VERSION.SDK_INT >= ANDROID_OREO && intent != null) {
             try {
                 synchronized (this) {
                     final Notification userProvidedNotification = (Notification) intent.getParcelableExtra(INTENT_KEY_NOTIFICATION);
                     if (userProvidedNotification != null) {
                         // Get the notification Id from the intent, if it's null, the default notification Id will be returned.
                         ongoingNotificationId = (int) intent.getIntExtra(INTENT_KEY_NOTIFICATION_ID, ongoingNotificationId);
-                        
+
                         // Get removeNotification from the intent, if it's null, removeNotification will be returned.
                         removeNotification = (boolean) intent.getBooleanExtra(INTENT_KEY_REMOVE_NOTIFICATION, removeNotification);
 
@@ -153,7 +148,7 @@ public class TransferService extends Service {
                         startForeground(ongoingNotificationId, userProvidedNotification);
                     } else {
                         LOGGER.error("No notification is passed in the intent. "
-                            + "Unable to transition to foreground.");
+                                + "Unable to transition to foreground.");
                     }
                 }
             } catch (Exception ex) {
@@ -217,21 +212,4 @@ public class TransferService extends Service {
         super.onDestroy();
     }
 
-    @Override
-    protected void dump(FileDescriptor fd, PrintWriter writer, String[] args) {
-        // only available when the application is debuggable
-        if ((getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) == 0) {
-            return;
-        }
-
-        writer.printf("network status: %s\n", transferNetworkLossHandler.isNetworkConnected());
-        final Map<Integer, TransferRecord> transfers = TransferStatusUpdater.getInstance(this).getTransfers();
-        writer.printf("# of active transfers: %d\n", transfers.size());
-        for (final TransferRecord transfer : transfers.values()) {
-            writer.printf("bucket: %s, key: %s, status: %s, total size: %d, current: %d\n",
-                    transfer.bucketName, transfer.key, transfer.state, transfer.bytesTotal,
-                    transfer.bytesCurrent);
-        }
-        writer.flush();
-    }
 }
