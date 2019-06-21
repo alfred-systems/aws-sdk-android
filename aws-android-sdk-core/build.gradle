@@ -28,8 +28,11 @@ dependencies {
 // creates a symbolic link to android-23.jar.
 task getApi23(type:Exec) {
     print 'Creating a symlink for Android API Level 23.'
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def sdkDir = properties.getProperty('sdk.dir')
     workingDir '.'
-    commandLine 'sh', '-c', "rm -rf libs && mkdir libs && ln -s $System.env.ANDROID_HOME/platforms/android-23/android.jar libs/android-23.jar"
+    commandLine 'sh', '-c', "rm -rf libs && mkdir libs && ln -s $sdkDir/platforms/android-23/android.jar libs/android-23.jar"
 }
 
 
