@@ -17,6 +17,8 @@ package com.amazonaws.internal.keyvaluestore;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.security.KeyPairGeneratorSpec;
 
 import com.amazonaws.logging.Log;
@@ -29,6 +31,7 @@ import java.security.KeyPairGenerator;
 import java.security.KeyStore;
 import java.security.SecureRandom;
 import java.util.Calendar;
+import java.util.Locale;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -153,6 +156,10 @@ public class KeyProvider18 implements KeyProvider {
                                               KeyStore keyStore,
                                               String keyAlias) throws Exception {
         if (!keyStore.containsAlias(keyAlias)) {
+            // Set English locale as default
+            final Locale initialLocale = Locale.getDefault();
+            setLocale(context, Locale.ENGLISH);
+
             Calendar start = Calendar.getInstance();
             Calendar end = Calendar.getInstance();
             end.add(Calendar.YEAR, 30);
@@ -168,8 +175,19 @@ public class KeyProvider18 implements KeyProvider {
                     ANDROID_KEY_STORE_NAME);
             kpg.initialize(spec);
             kpg.generateKeyPair();
+
+            // Reset default locale
+            setLocale(context, initialLocale);
         } else {
             logger.info("Android KeyStore contains the alias: " + keyAlias);
         }
+    }
+
+    private void setLocale(Context context, Locale locale) {
+        Locale.setDefault(locale);
+        Resources resources = context.getResources();
+        Configuration config = resources.getConfiguration();
+        config.locale = locale;
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 }
