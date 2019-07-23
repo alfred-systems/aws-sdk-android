@@ -209,10 +209,7 @@ public class TransferNetworkLossHandler extends BroadcastReceiver {
      * Pause all running transfers and set the state to WAITING_FOR_NETWORK.
      */
     private synchronized void pauseAllTransfersDueToNetworkInterruption() {
-        HashMap<Integer, TransferRecord> map = new HashMap<>();
-        map.putAll(updater.getTransfers());
-
-        for (final TransferRecord transferRecord : map.values()) {
+        for (final TransferRecord transferRecord : updater.getTransfers().values()) {
             if (transferRecord == null) {
                 continue;
             }
