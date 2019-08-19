@@ -36,6 +36,31 @@ public class AWSConfiguration {
     private String configName; // "Default" or something else like "Backup"
 
     /**
+     * Construct an AWSConfiguration object based on the JSONObject passed in.
+     *
+     * @param jsonObject contains the configuration information
+     */
+    public AWSConfiguration(JSONObject jsonObject) {
+        this(jsonObject, DEFAULT);
+    }
+
+    /**
+     * Construct an AWSConfiguration object based on the JSONObject passed in.
+     *
+     * @param jsonObject contains the configuration information
+     * @param configName name of the configuration,
+     *                   "Default" or something else like "Backup"
+     */
+    public AWSConfiguration(JSONObject jsonObject, String configName) {
+        if (jsonObject == null) {
+            throw new IllegalArgumentException("JSONObject cannot be null.");
+        }
+
+        this.configName = configName;
+        this.mJSONObject = jsonObject;
+    }
+
+    /**
      * Constructs an AWSConfiguration object
      * 
      * @param context application context, used to retrieve
